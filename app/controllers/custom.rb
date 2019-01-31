@@ -1,14 +1,8 @@
 class Custom < BaseController
     def index
         Response.new.tap do |response|
-            response.body = "Hello World"
-            response.status_code = 200
-        end
-    end
-    
-    def show
-        Response.new.tap do |response|
-            response.body = "Catchall Route"
+            # Serve the index.html.erb file from the views folder as body
+            response.body = File.open(File.join(File.dirname(__FILE__),'..', 'views/index.html.erb'), File::RDONLY)
             response.status_code = 200
         end
     end

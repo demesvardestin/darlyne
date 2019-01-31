@@ -14,5 +14,6 @@ this project's directory.
 
 ### Todo
 
-This app can't currently serve static files, and is not available from the command
-line. Hoping to handle both these things next.
+This app is not available from the command line. So rails-like commands
+such as ```darlyne new```, though convenient, are not yet implemented. I'm hoping
+to package this as a gem at some point.
