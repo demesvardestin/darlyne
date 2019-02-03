@@ -9,7 +9,7 @@ class ApplicationController
             response = route.execute(env)
             return response.rack_response
         else
-            return [404, {}, []]
+            return [404, {}, File.open(File.join(File.dirname(__FILE__),'..','public/404.html'))]
         end
     end
     

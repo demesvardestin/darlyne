@@ -1,2 +1,146 @@
-<h1>Hello World!</h1>
-<p>Find me in app/views/index.html.erb</p>
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Darlyne on Rack</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/application.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/application.js"></script>
+    </head>
+    
+    <body>
+        <nav class="app-navbar">
+            <a href="/" class="navbar-brand nav-child">
+                rack-simple
+            </a>
+            <span class="navbar-links nav-child">
+                <button class="nav-link btn" onclick="window.location.replace('https://github.com/demesvardestin/rack-todo');">
+                    View On Github
+                </button>
+            </span>
+        </nav>
+        <section id="inner-body">
+            <section id="main">
+                <header id="main-header">
+                    <span>Super Simple Rack-based App Template</span>
+                </header>
+                
+                <section class="row" style="height: auto;">
+                    <div class="col-3" style="height: auto;">
+                        <div class="card">
+                            <div class="card-header">
+                                ActiveRecord
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        ActiveRecord can easily be plugged in
+                                        as a standalone ORM.
+                                    </li>
+                                    <li>
+                                        Simply install the gem in the Gemfile
+                                        or via the command-line with
+                                        <em>gem install</em>.
+                                    </li>
+                                    <li>
+                                        Enjoy all of Rails' powerful AR features
+                                        such as associations, validations, and
+                                        callbacks.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                ActionPack
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        The current view/controller implementation
+                                        is pretty bare and void of things like
+                                        ERB and Builder.
+                                    </li>
+                                    <li>
+                                        ActionPack solves this problem by bringing
+                                        all of Rails powerful routing, controller,
+                                        and rendering capabilities.
+                                    </li>
+                                    <li>
+                                        AP is also a standalone gem, so you can
+                                        install it via either the cli or the
+                                        Gemfile.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Rake/Tasks
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        Sinatra's ActiveRecord & Rake libraries
+                                        are currently installed in order to
+                                        make some key tasks available.
+                                    </li>
+                                    <li>
+                                        Tasks such as <em>rake db:{some-task}</em>
+                                        can be run from the cli. Seemed more
+                                        convenient than building my own.
+                                        
+                                    </li>
+                                    <li>
+                                        There's already a schema in place from
+                                        previous tests, but feel free to remove the
+                                        entire db folder and regenarate.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                To Do
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        Helpers (Views)
+                                    </li>
+                                    <li>
+                                        Security
+                                    </li>
+                                    <li>
+                                        Sessions/Cookies (I seem to have a hard time
+                                        adding Rails' <em>ActionDispatch::Cookies</em>,
+                                        so 'cookies' and 'sessions' will throw an error.)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        
+        <footer id="footer">
+            <p class="white">
+                &copy; Demesvar Destin |
+                <a href="https://github.com/demesvardestin" class="white">Github</a> |
+                <a href="http://demesvardestin.com" class="white">Website</a>
+            </p>
+        </footer>
+    </body>
+</html>

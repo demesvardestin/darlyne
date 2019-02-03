@@ -1,3 +1,3 @@
 DarlyneFramework.router.config do
-  get "/", :to => "custom#index"
+  get "/", :to => "main#index"
 end

@@ -18,5 +18,11 @@ DarlyneFramework = Darlyne.new
 # Load the routes
 require File.join(File.dirname(__FILE__), 'config', 'routes')
 
+# Load helpers
+require File.join(File.dirname(__FILE__), 'app', 'helpers/application_helper')
+
+# Load the public folder with all static files for later availability
+use Rack::Static, :urls => ["/css", "/images", "/js"], :root => "public"
+
 # Rack starts the application
 run ApplicationController.new

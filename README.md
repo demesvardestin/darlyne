@@ -1,19 +1,24 @@
-## Darlyne
+## Rack-Simple
+[Demo](https://racksimle.herokuapp.com)
+![rack-simple](https://github.com/demesvardestin/rack-simple/raw/master/public/images/rack-simple.png "rack-simple")
 
-Darlyne is a simple, super watered-down rack-based web framework. It was built
-as a follow up to Adam Gamble's [tutorial](https://isotope11.com/blog/build-your-own-web-framework-with-rack-and-ruby-part-2 "Isotope Eleven")
-on [Isotope Eleven](https://isotope11.com).
+This is a simple, super watered-down rack-based app template. It demonstrates
+some high-level rack features such as the ```env``` variable, use of ```middleware```
+such as ```Rack::Static```, and the overall Request/Response cycle.
 
-I've added my own comments and remarks to explain some of the key steps in
-the process.
+### Purpose
+
+On a macro level, this app has no real production potential. But it attempts to break down
+what happens under the hood at the lower-level in some Rails features such as routing,
+controller actions and rendering. To that end, I've added quite a few comments and
+remarks to explain some of the key steps in the process.
 
 ### Installation & Usage
 
 Fork/Clone this repo, run ```bundle install```, then run ```rackup``` within
-this project's directory.
+the project's directory.
 
-### Todo
+### Links/Further Reading
 
-This app is not available from the command line. So rails-like commands
-such as ```darlyne new```, though convenient, are not yet implemented. I'm hoping
-to package this as a gem at some point.
+Adam Gamble's [tutorial](https://isotope11.com/blog/build-your-own-web-framework-with-rack-and-ruby-part-2 "Isotope Eleven")
+Rack's [Website](rack.github.io "Rack Official Website")
