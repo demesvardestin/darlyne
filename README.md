@@ -20,5 +20,5 @@ the project's directory.
 
 ### Links/Further Reading
 
-Adam Gamble's [tutorial](https://isotope11.com/blog/build-your-own-web-framework-with-rack-and-ruby-part-2 "Isotope Eleven")
-Rack's [Website](rack.github.io "Rack Official Website")
+- Adam Gamble's [tutorial](https://isotope11.com/blog/build-your-own-web-framework-with-rack-and-ruby-part-2 "Isotope Eleven")
+- Rack's [Website](rack.github.io "Rack Official Website")
